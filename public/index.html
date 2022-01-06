@@ -23,7 +23,7 @@
     <script>eruda.init();</script> 
 
   </head>
-  <body onload="msk.play();//msk.muted = false">
+  <body onload="klk.click()">
     <div id="konten">
       <div id="foto">
         <div class="image">
@@ -31,7 +31,7 @@
         </div>
         <span style="font-weight:700;font-size: 13px" id="sp2"></span>
       </div>
-      <audio id="msk" style="display: none; margin: 20px 0;" controls autoplay loop muted>
+      <audio id="msk" style="display: none; margin: 20px 0;" controls autoplay loop>
         <source src="https://lv3000.likeadream.repl.co/musik.mp3" type="audio/mpeg">
       </audio>
       <div id="slider">
@@ -113,5 +113,6 @@
       }
     </script>
     <script src="script.js"></script>
+    <span id="klk" onclick="msk.play();alert(123)"></span>
   </body>
 </html>
