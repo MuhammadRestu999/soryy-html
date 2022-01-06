@@ -24,13 +24,13 @@
 
     <script>
       function musik() {
-        let m = new Play("https://lv3000.likeadream.repl.co/musik.mp3");
+        let m = new Audio("https://lv3000.likeadream.repl.co/musik.mp3");
         m.loop = true;
         m.play();
       }
     </script>
   </head>
-  <body>
+  <body onload="musik()">
     <div id="konten">
       <div id="foto">
         <div class="image">
